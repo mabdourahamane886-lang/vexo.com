@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vexo — MVP</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Vexo</h1>
+      <p class="subtitle">Un MVP simple pour organiser tes actions quotidiennes.</p>
+
+      <form id="add-task-form">
+        <input id="task-input" type="text" placeholder="Ajouter une tâche importante" required />
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <section class="toolbar">
+        <strong id="task-stats"></strong>
+        <button id="clear-completed" type="button">Nettoyer les tâches terminées</button>
+      </section>
+
+      <ul id="task-list"></ul>
+    </main>
+
+    <script type="module" src="./src/vexo-app.js"></script>
+  </body>
+</html>
